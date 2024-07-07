@@ -27,7 +27,17 @@ public class User {
 	@Column(nullable = false)
 	private String gender;
 	
+	private boolean userStatus;
+	
 	//Getters and Setters
+
+	public boolean isUserStatus() {
+		return userStatus;
+	}
+
+	public void setUserStatus(boolean userStatus) {
+		this.userStatus = userStatus;
+	}
 
 	public Integer getId() {
 		return id;
